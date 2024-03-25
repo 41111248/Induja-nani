@@ -4,7 +4,7 @@ public class DiceCombinations {
         int totalCombinations = 0;
         for (int dieA = 1; dieA <= sides; dieA++) {
             for (int dieB = 1; dieB <= sides; dieB++) {
-                System.out.println(" A :" + dieA + ",  B: " + dieB);
+                System.out.println(" dice A :" + dieA + ", dice  B: " + dieB);
                 totalCombinations++;
             }
         }  
