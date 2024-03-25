@@ -1,0 +1,32 @@
+Type 1:
+
+
+public class DiceCombinations {
+    public static void main(String[] args) {
+          int sides = 6;
+        int totalCombinations = sides * sides;
+System.out.println("Total combinations : " + totalCombinations);
+    }
+}
+
+Type 2:
+
+import java.util.Scanner;
+
+public class DiceCombinations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the no.of sides for diece A : ");
+        int sidesA = scanner.nextInt();
+
+       
+        System.out.print("Enter the no.of sides for dice B : ");
+        int sidesB = scanner.nextInt();
+        int totalCombinations = sidesA * sidesB;
+
+       System.out.println("total combination : " + totalCombinations);
+
+        scanner.close();
+    }
+}
