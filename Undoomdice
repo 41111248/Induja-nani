@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class UndoomDice {
+    public static void undoom_dice(int[] dieA, int[] dieB, int[] newDieA, int[] newDieB) {
+        for (int i = 0; i < 6; ++i) {
+            newDieA[i] = Math.min(dieA[i], 4);   
+            newDieB[i] = dieB[i];               
+        }
+    }
+    public static void main(String[] args) {
+        int[] dieA = {1, 2, 3, 4, 5, 6};
+        int[] dieB = {1, 2, 3, 4, 5, 6};
+        int[] newDieA = new int[6];
+        int[] newDieB = new int[6];
+        undoom_dice(dieA, dieB, newDieA, newDieB);
+        System.out.println("New Die A: " + Arrays.toString(newDieA));
+        System.out.println("New Die B: " + Arrays.toString(newDieB));
+    }
+}
